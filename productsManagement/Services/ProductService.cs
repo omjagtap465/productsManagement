@@ -12,7 +12,8 @@ namespace productsManagement.Services
         }
         public async Task<List<Product>> GetAllProducts() => await _repository.GetAllProducts();
         public async Task<bool> AddProduct(Product product) => await _repository.AddProduct(product);
+        public async Task<bool> UpdateProduct(Product product) => await _repository.UpdateProduct(product);
+        public async Task<bool> DeleteProduct(int productId) => await _repository.DeleteProduct(productId);
 
-        
     }
 }
