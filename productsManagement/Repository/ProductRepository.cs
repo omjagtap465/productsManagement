@@ -62,8 +62,8 @@ SET
     ProductName = @ProductName,
     Category = @Category,
     Price = @Price,
-    StockQuantity = @StockQuantity,
-    UpdatedAt = @UpdatedAt
+    StockQuantity = @StockQuantity
+
 WHERE ProductID = @ProductID";
 
             await Connection.ExecuteAsync(updateQuery, product);
